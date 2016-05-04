@@ -1,0 +1,15 @@
+$query1="SELECT `img` FROM `product` WHERE `pr_id`=1;";
+$query2="SELECT `img` FROM `product` WHERE `pr_id`=2;";
+$query3="SELECT `img` FROM `product` WHERE `pr_id`=3;";
+$query4="SELECT `img` FROM `product` WHERE `pr_id`=4;";
+$query5="SELECT `img` FROM `product` WHERE `pr_id`=5;";
+$result = mysqli_query($db, $query1);
+$result2 = mysqli_query($db, $query2);
+$result3 = mysqli_query($db, $query3);
+$result4 = mysqli_query($db, $query4);
+$result5 = mysqli_query($db, $query5);
+$row = mysqli_fetch_assoc($result);
+$row1 = mysqli_fetch_assoc($result2);
+$row2 = mysqli_fetch_assoc($result3);
+$row3 = mysqli_fetch_assoc($result4);
+$row4 = mysqli_fetch_assoc($result5);
